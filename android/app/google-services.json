@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "823944849830",
+    "project_id": "sendex2025",
+    "storage_bucket": "sendex2025.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823944849830:android:04d2cbfab74066b9d88767",
+        "android_client_info": {
+          "package_name": "com.example.sendex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv8p-8jKTzuhUbnRlHv9KlK7Q2WaYo2tk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
