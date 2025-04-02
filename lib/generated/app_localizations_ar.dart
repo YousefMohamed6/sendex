@@ -105,9 +105,6 @@ class AppLocalizationsAr extends AppLocalizations {
   String get no_data => 'لا يوجد بيانات';
 
   @override
-  String get chats => 'Chats';
-
-  @override
   String get invalidEmailorPassword => 'البريد الالكتروني او كلمة المرور غير صحيحة';
 
   @override

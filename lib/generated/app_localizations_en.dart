@@ -105,9 +105,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get no_data => 'No Data';
 
   @override
-  String get chats => 'Chats';
-
-  @override
   String get invalidEmailorPassword => 'Invalid Email Or Password';
 
   @override

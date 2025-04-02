@@ -31,7 +31,6 @@
   "fail": "Fail",
   "invalid_email": "Invalid Email",
   "no_data": "No Data",
-  "chats": "Chats",
   "invalidEmailorPassword": "Invalid Email Or Password",
   "weakPassword": "Weak Password",
   "userNotFound": "User Not Found",

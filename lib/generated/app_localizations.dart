@@ -287,12 +287,6 @@ abstract class AppLocalizations {
   /// **'No Data'**
   String get no_data;
 
-  /// No description provided for @chats.
-  ///
-  /// In en, this message translates to:
-  /// **'Chats'**
-  String get chats;
-
   /// No description provided for @invalidEmailorPassword.
   ///
   /// In en, this message translates to:
