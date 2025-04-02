@@ -11,7 +11,6 @@ import 'package:sendex/features/auth/register/presentation/manager/register_cubi
 import 'package:sendex/features/auth/register/presentation/views/register_view.dart';
 import 'package:sendex/features/auth/rest_Password/persentation/manager/rest_password_cubit.dart';
 import 'package:sendex/features/auth/rest_Password/persentation/view/rest_password_view.dart';
-import 'package:sendex/features/orders/data/model/order_model.dart';
 import 'package:sendex/features/orders/di/order_service.dart';
 import 'package:sendex/features/orders/domin/repos/i_order_repo.dart';
 import 'package:sendex/features/orders/presentation/manager/order_cubit.dart';
@@ -85,8 +84,8 @@ sealed class RouterManager {
         path: OrderDetailsView.routeName,
         name: OrderDetailsView.routeName,
         builder: (context, state) {
-          final orderModel = state.extra as OrderModel;
-          return OrderDetailsView(orderModel: orderModel);
+          final cubit = state.extra as OrderCubit;
+          return BlocProvider.value(value: cubit, child: OrderDetailsView());
         },
       ),
     ],

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:sendex/features/orders/data/model/order_model.dart';
+import 'package:sendex/features/orders/presentation/manager/order_cubit.dart';
 import 'package:sendex/features/orders/presentation/views/order_details_view.dart';
 
 class OrderItem extends StatelessWidget {
@@ -14,7 +16,9 @@ class OrderItem extends StatelessWidget {
         subtitle: Text(order.clientAddress),
         trailing: Text(order.orderStatus),
         onTap: () {
-          context.pushNamed(OrderDetailsView.routeName, extra: order);
+          final cubit = context.read<OrderCubit>();
+          cubit.selectedOrder = order;
+          context.pushNamed(OrderDetailsView.routeName, extra: cubit);
         },
       ),
     );

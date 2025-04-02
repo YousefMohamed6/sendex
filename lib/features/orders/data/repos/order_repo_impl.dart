@@ -22,7 +22,7 @@ class OrderRepoImpl implements IOrderRepo {
               DateTime.now()
                   .subtract(const Duration(days: 3))
                   .toIso8601String(),
-          'orderStatus': 'Pending',
+          'orderStatus': 'pending',
         },
         {
           'clientName': 'Omar Marmoush',
@@ -36,7 +36,7 @@ class OrderRepoImpl implements IOrderRepo {
               DateTime.now()
                   .subtract(const Duration(days: 2))
                   .toIso8601String(),
-          'orderStatus': 'Delivered',
+          'orderStatus': 'delivered',
         },
         {
           'clientName': 'Mo Salah',
@@ -50,7 +50,7 @@ class OrderRepoImpl implements IOrderRepo {
               DateTime.now()
                   .subtract(const Duration(days: 3))
                   .toIso8601String(),
-          'orderStatus': 'Cancelled',
+          'orderStatus': 'cancelled',
         },
       ],
     );

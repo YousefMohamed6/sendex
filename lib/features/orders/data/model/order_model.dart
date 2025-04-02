@@ -11,7 +11,7 @@ class OrderModel {
   final String notes;
   final String orderId;
   final String orderName;
-  final String orderStatus;
+  String orderStatus;
   final DateTime orderDate;
 
   OrderModel({
